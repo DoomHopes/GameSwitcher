@@ -11,12 +11,15 @@ public class TagActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tag);
-
-
     }
 
-    private TextView getCellByCoord(int i, int j)
-    {
+    private TextView getCellByCoord(int i, int j) {
         return findViewById(getResources().getIdentifier("c"+i+j,"id",getPackageName()));
     }
+
+     /*
+    int[] getEmptyCellCoords(){
+
+    }
+*/
 }
